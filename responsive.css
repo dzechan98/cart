@@ -1,20 +1,16 @@
-@media (min-width: 940px) and (max-width: 1199px) {
-  .container {
-    width: 900px;
+@media (max-width: 739px) {
+  .container.nav {
+    padding: 20px 5%;
+  }
+  section.container {
+    padding: 80px 5%;
   }
 }
-@media (min-width: 800px) and (max-width: 939px) {
-  .container {
-    width: 740px;
+@media (min-width: 740px) and (max-width: 1180px) {
+  .container.nav {
+    padding: 20px 8%;
   }
-}
-@media (min-width: 700px) and (max-width: 799px) {
-  .container {
-    width: 650px;
-  }
-}
-@media (max-width: 699px) {
-  .container {
-    padding: 0 10px;
+  section.container {
+    padding: 80px 8%;
   }
 }
