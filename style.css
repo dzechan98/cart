@@ -198,26 +198,34 @@ section {
 .add-cart:hover {
   background-color: #2b206b;
 }
-@keyframes toastAnimation {
+@keyframes fadeIn {
   0% {
+    opacity: 0;
     transform: translateX(-100%);
   }
   70% {
-    transform: translateX(220px);
+    opacity: 1;
+    transform: translateX(150px);
   }
   100% {
+    opacity: 0;
     transform: translateX(-100%);
   }
 }
-.toast {
+#toast {
   position: fixed;
-  top: 100px;
   left: 0;
-  padding: 10px 20px;
-  transform: translateX(-100%);
-  background-color: #a754e6;
-  border-radius: 6px;
+  z-index: 100;
+  top: 100px;
+}
+.toast {
+  display: block;
+  max-width: 320px;
+  background-color: #4e39cb;
   color: #fff;
-  font-size: 1.7rem;
-  animation: toastAnimation 4s;
+  font-size: 1.8rem;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  animation: fadeIn 2s ease forwards;
 }
